@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@300&display=swap");
+/* BODY */
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header  */
+.logo {
+  width: 60%;
+  margin: 20px 70px 10px 70px;
+}
+
+header a {
+  width: 100%;
+}
+
+.villeheader {
+  height: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -3px 0px 1px rgba(0, 0, 0, 0.25);
+}
+.villeheader .fa-map-marker-alt {
+  padding: 0 10px 0 0;
+}
+
+/* section */
+h1 {
+  margin: 30px 75px 10px 75px;
+  font-weight: bold;
+}
+h1 span {
+  margin: 0 0 0 38px;
+}
+
+section p {
+  margin: 15px 30px 25px 30px;
+  font-size: large;
+}
+section p span {
+  margin: 0 0 0 50px;
+}
+
+.explorerbtn {
+  display: flex;
+  justify-content: center;
+  margin-left: 55px;
+  width: 70%;
+  color: white;
+  background: #ff79da;
+  background: linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 55px;
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
