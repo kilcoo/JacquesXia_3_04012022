@@ -24,7 +24,7 @@ header a {
   width: 100%;   
 }
 .villeheader {
-  height: 50px;
+  height: 60px;
   background-color: #f2f2f2 ;
   display: flex;
   justify-content: center;
@@ -35,8 +35,13 @@ header a {
   }
 }
 /* section */
+.reservation{
+  box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.25);
+  height: 270px;
+}
 h1 {
-  margin: 30px 75px 10px 75px;
+  margin: 0px 75px 10px 75px;
+  padding-top: 25px;
   font-weight: bold;
   span {
     margin: 0 0 0 38px;
@@ -60,3 +65,53 @@ section p {
   border-radius: 55px;
   padding-top: 5px;
 }
+.reservation {
+  background-color: #f7f5f5 ;
+}
+/* section fonctionement*/
+.fonctionnement{
+  margin: 35px 10px 30px 0px ;
+  h2 {
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+}
+.fonctionsection a {
+  color: black;
+  box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.25);
+  height: 75px;
+  margin: 30px 0;
+  width: 95%;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  i{
+    font-size: larger;
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+  span {
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: medium;
+  }
+}
+.number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 10px;
+  width: 10%;
+  height: 40%;
+  border-radius: 50px;
+  background-color: rgba(147,86,220,1);
+  font-size: large;
+  color: white;
+  position: relative;
+  right: 25px;
+}
+.fonctionsection a:hover {
+  background-color: rgb(243, 119, 237);
+}
+
