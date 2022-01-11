@@ -70,6 +70,7 @@ section p {
 }
 /* section fonctionement*/
 .fonctionnement{
+  height: 400px;
   margin: 35px 10px 30px 0px ;
   h2 {
     margin-left: 20px;
@@ -114,4 +115,32 @@ section p {
 .fonctionsection a:hover {
   background-color: rgb(243, 119, 237);
 }
-
+/* section restaurant*/
+.restaurant {
+  background-color: #f2f2f2;
+  h2{
+    margin: 0 0 15px 15px;
+    padding-top: 40px;
+  }
+}
+.restaurantcard  {
+  margin: 20px;
+  height: 320px;
+  border: 1px ;
+  border-radius: 25px;
+  width: 90%;
+  background-color: white;
+  img{
+    width: 100%;
+    object-fit: cover;
+    height: 220px;
+    border-radius: 25px 25px 0 0;
+  }
+  .carddescription{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.like {
+  display: flex;
+}
