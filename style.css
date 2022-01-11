@@ -141,11 +141,12 @@ section p span {
 
 .restaurantcard {
   margin: 20px;
-  height: 320px;
+  height: 300px;
   border: 1px;
   border-radius: 25px;
   width: 90%;
   background-color: white;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.42);
 }
 .restaurantcard img {
   width: 100%;
@@ -153,13 +154,70 @@ section p span {
   height: 220px;
   border-radius: 25px 25px 0 0;
 }
+.restaurantcard .news {
+  background-color: #9ce29c;
+  color: green;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  bottom: 270px;
+  width: 22%;
+  height: 35px;
+  padding: 6px;
+  float: right;
+  margin-right: 15px;
+  border-radius: 5px;
+}
 .restaurantcard .carddescription {
-  display: flex;
-  flex-direction: column;
+  padding: 10px 0 0 15px;
+  text-decoration: none;
+}
+.restaurantcard p {
+  color: black;
+  margin: 0;
+}
+.restaurantcard h3 {
+  margin-bottom: 5px;
+  color: black;
 }
 
 .like {
   display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 30px;
+  left: 45px;
+  font-size: 20px;
+}
+
+.like1 {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 35px;
+  right: 45px;
+  font-size: 20px;
+}
+
+/* footer*/
+footer {
+  height: 200px;
+  background-color: #2e2a2a;
+}
+
+.footerlogo {
+  font-size: 20px;
+  color: white;
+  font-family: "Shrikhand";
+  margin: 20px 0 20px 30px;
+  padding: 15px 0 0 0;
+}
+
+li {
+  color: white;
+  list-style: none;
+  font-size: 18px;
+  padding: 5px 0 5px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
