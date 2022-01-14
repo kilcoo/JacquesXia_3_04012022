@@ -209,8 +209,6 @@ section p span {
   opacity: 0;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text !important;
-  -webkit-background-clip: text;
-  background-clip: text;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 }
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@300&display=swap');
 
+
 /* BODY */
 h1 h2 h3 h4 h5 h6 {
   font-family: 'Shrikhand', sans-serif;
@@ -181,7 +182,8 @@ section p {
 }
 /* COEUR*/
 .fa-heart{
-  font-size: 21px ;
+  font-size: 30px ;
+
 }
 .likeactive {
   position: relative;
@@ -189,8 +191,6 @@ section p {
   opacity: 0;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text!important;
-  -webkit-background-clip: text;
-  background-clip: text;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 }
 input {

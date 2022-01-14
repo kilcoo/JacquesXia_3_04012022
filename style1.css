@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/*header*/
+nav {
+  width: 100%;
+  height: 50px;
+}
+nav .logo {
+  float: right;
+  margin-right: 110px;
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+  background: white;
+}
+nav .fa-arrow-left {
+  padding: 22px;
+}
+
+.background img {
+  width: 100%;
+}
+
+/*main*/
+.plat {
+  background-color: #f2f2f2;
+}
+
+.tittle {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  bottom: 25px;
+}
+.tittle h1 {
+  font-size: 25px;
+  margin: 10px 0 0 20px;
+  font-family: "Shrikhand", sans-serif;
+}
+
+/*coeur*/
+.fa-heart {
+  font-size: 25px;
+}
+
+.like {
+  position: relative;
+  top: 15px;
+  left: 50px;
+}
+
+.likeactive1 {
+  position: relative;
+  top: 15px;
+  left: 25px;
+  opacity: 0;
+  transition-duration: 0.5s;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+}
+
+.input {
+  opacity: 0;
+  z-index: 1;
+  position: relative;
+  top: 20px;
+  left: 70px;
+  cursor: pointer;
+}
+
+input:checked ~ .like {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+input:checked ~ .likeactive1 {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+/*entrer*/
+.entrer {
+  height: 350px;
+  margin-bottom: 10px;
+}
+.entrer h2 {
+  margin: 0 0 0 15px;
+}
+.entrer .entrercard1 {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+}
+.entrer .entrercard2 {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+}
+.entrer .entrercard3 {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+}
+.entrer .prix {
+  float: right;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+}
+
+.entrercard .add {
+  float: right;
+  position: relative;
+  height: 80px;
+  width: 15%;
+  bottom: 50px;
+  background-color: #b7e2b7;
+  height: 50px;
+}
+.entrercard .add .fa-check-circle {
+  margin: 15px;
+  border-radius: 30px;
+  font-size: 21px;
+  background-color: white;
+}
+
+/*# sourceMappingURL=style1.css.map */
