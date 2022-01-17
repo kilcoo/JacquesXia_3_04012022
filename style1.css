@@ -18,11 +18,13 @@ nav {
   height: 50px;
 }
 nav .logo {
+  padding: 5px;
+  position: relative;
   float: right;
-  margin-right: 110px;
-  width: 40%;
-  height: 40%;
-  margin-top: 20px;
+  right: 90px;
+  width: 50%;
+  height: 100%;
+  margin-top: 10px;
   background: white;
 }
 nav .fa-arrow-left {
@@ -101,44 +103,65 @@ input:checked ~ .likeactive1 {
   margin: 0 0 0 15px;
 }
 .entrer .entrercard1 {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
   margin: 15px;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 0 10px;
+  border-radius: 20px;
   background-color: white;
+  overflow: hidden;
 }
-.entrer .entrercard2 {
-  margin: 15px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: white;
+.entrer .carddescription {
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  padding: 5px 0 0 5px;
 }
-.entrer .entrercard3 {
-  margin: 15px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: white;
+.entrer .carddescription p {
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.entrer .carddescription h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .entrer .prix {
-  float: right;
-  position: relative;
-  bottom: 15px;
   font-weight: bold;
+  padding: 1.75rem 0 0 1rem;
 }
 
-.entrercard .add {
-  float: right;
-  position: relative;
-  height: 80px;
-  width: 15%;
-  bottom: 50px;
-  background-color: #b7e2b7;
-  height: 50px;
+.add {
+  margin-right: -7rem;
+  border-radius: 0 20px 20px 0;
+  background: #99e2d0;
+  color: white;
+  padding: 0 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 100%;
 }
-.entrercard .add .fa-check-circle {
-  margin: 15px;
-  border-radius: 30px;
-  font-size: 21px;
-  background-color: white;
+.add .fa-check-circle {
+  padding: 0 20px 0 0;
+}
+
+.entrercard1:hover .add {
+  margin-right: -1rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.idk {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=style1.css.map */
