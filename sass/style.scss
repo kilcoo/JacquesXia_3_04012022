@@ -113,9 +113,8 @@ section p {
   position: relative;
   right: 25px;
 }
-.fonctionsection a:hover {
-  background-color: rgb(243, 119, 237);
-}
+
+
 /* section restaurant*/
 .restaurant {
   background-color: #f2f2f2;
@@ -183,20 +182,24 @@ section p {
 /* COEUR*/
 .fa-heart{
   font-size: 30px ;
-
+}
+.likeunactive{
+  font-size: 28px;
 }
 .likeactive {
   position: relative;
-  right: 21px;
+  right: 28px;
+  bottom: 1px;
   opacity: 0;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text!important;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 }
 input {
-  size: 21px;
+  size: 60px;
   position: relative;
-  left: 17px;
+  left: 22px;
+  top: 8px;
   z-index: 1;
   opacity: 0;
   cursor: pointer;
@@ -227,4 +230,57 @@ footer li {
     list-style: none;
     font-size: 18px;
     padding: 5px 0 5px 10px;
+}
+/* responsive pc*/
+@media screen and ( min-width: 768px) and (max-width: 1920px) {
+  .logo {
+    width: 25%;
+    margin: 1rem 0 0 45rem;
+  }
+  .reservation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .explorerbtn {
+      width: 100%;
+      margin-left: 8px;
+    }
+    .explorerbtn:hover{
+      transform: scale(110%);
+      background: linear-gradient(90deg, rgb(247, 126, 212) 0%, rgb(158, 105, 223) 100%);
+    }
+  }
+  .fonctionnement{
+    height: 180px;
+    .fonctionsection{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    .fonctionsection li:hover {
+      transform: scale(105%);
+      width: 95%;
+      border-radius: 25px;
+      -webkit-box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.40); 
+      box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.40);
+    }
+  }
+  .fonctionsection a {
+    width: 100%;
+  }
+  .restaurant {
+    display: flex;
+  }
+  .restaurantcard {
+    margin: 20px;
+    width: 18%;
+    img {
+      width: 342px;
+    }
+  }
+  .restaurantcard:hover {
+    transform: scale(105%);
+  }
 }
