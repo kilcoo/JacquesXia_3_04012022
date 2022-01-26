@@ -1,3 +1,4 @@
+@import "../libs/mixins.scss";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@300&display=swap");
 *{
@@ -6,16 +7,109 @@
 body {
   background-color: #f2f2f2;
 }
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h4, h5, h6 {
   font-family: "Shrikhand", sans-serif;
 }
 p {
   font-family: "Roboto", sans-serif;
 }
+/*loadspinner*/
+.loadspinner{
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF80;
+  animation: loadinger 0.1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  .loading{
+    border: 5px solid #9356DC;
+    border-top: 5px solid #99E2D0;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: loading 1s ease-in-out;
+    animation-iteration-count: 3;
+  }
+}
+@keyframes loading{
+    0%
+    { 
+        transform: rotate(0deg); 
+    }
+    100%
+    { 
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes loadinger
+{
+    100%
+    {
+       opacity: 0;
+       z-index: -1;
+    }
+}
+
+.entrercard1{
+  animation: 3s forwards 1s slidein;
+  animation-delay: 0.9s;
+}
+@keyframes slidein {
+  from{
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to{
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+.platcard1{
+  animation: 3s forwards 1s slidein;
+  animation-delay: 1.1s;
+}
+@keyframes slidein {
+  from{
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to{
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+.dessertcard1{
+  animation: 3s forwards 1s slidein;
+  animation-delay: 1.4s;
+}
+@keyframes slidein {
+  from{
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to{
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
 /*header*/
 nav {
+  display: flex;
   width: 100%;
   height: 50px;
+  h2{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
   .logo {
     padding: 5px;
     position: relative;
@@ -24,7 +118,6 @@ nav {
     width: 50%;
     height: 100%;
     margin-top: 10px;
-    background: white;
   }
   .fa-arrow-left {
     padding: 22px;
@@ -90,12 +183,14 @@ input:checked ~ .likeactive1{
 .entrer{
   margin-bottom: 10px;
   h2 {
+    font-family: none;
     width: 10%;
     margin: 0 0 0 15px;
     padding-bottom: 5px;
     border-bottom: rgb(93, 217, 255) 2px solid;
   }
   .entrercard1 {
+    opacity: 0;
     display: flex;
     flex-direction: row;
     height: 70px;
@@ -127,44 +222,33 @@ input:checked ~ .likeactive1{
     padding: 1.75rem 0 0 1rem;
   }
 }
-.add {
-  margin-right: -7rem;
-  border-radius: 0 20px 20px 0;
-  background: #99e2d0;
-  color: white;
-  padding: 0 0 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 100%;
-  .fa-check-circle{
-    padding: 0 20px 0 0;
-  }
+.entrercard1{
+    &:hover
+    .add i{
+      transition-duration: 1s;
+      transform: rotate(360deg);
+    }
 }
+
 .entrercard1:hover .add {
-  margin-right: -1rem;
-	transition-duration: 0.5s;
+  margin-right: -0.6rem;
+	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
 }
-.alldescription{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-  padding-right: 1rem;
-}
+
 
 /*plat*/
 .plat{
   margin-bottom: 10px;
   h2 {
+    font-family: none;
     width: 10%;
     margin: 0 0 0 15px;
     padding-bottom: 5px;
     border-bottom: rgb(93, 217, 255) 2px solid;
   }
   .platcard1 {
+    opacity: 0;
     display: flex;
     flex-direction: row;
     height: 70px;
@@ -186,9 +270,7 @@ input:checked ~ .likeactive1{
       overflow: hidden;
     }
     h3 {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      @include cardh3;
     }
   }
   .prix {
@@ -196,44 +278,33 @@ input:checked ~ .likeactive1{
     padding: 1.75rem 0 0 1rem;
   }
 }
-.add {
-  margin-right: -7rem;
-  border-radius: 0 20px 20px 0;
-  background: #99e2d0;
-  color: white;
-  padding: 0 0 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 100%;
-  .fa-check-circle{
-    padding: 0 20px 0 0;
-  }
+.platcard1{
+  &:hover
+  .add i{
+    transition-duration: 1s;
+    transform: rotate(360deg);
+    }
 }
+
 .platcard1:hover .add {
-  margin-right: -1rem;
-	transition-duration: 0.5s;
+  margin-right: -0.6rem;
+	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
 }
-.alldescription{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-  padding-right: 1rem;
-}
+
 
 /*dessert*/
 .desserts{
   margin-bottom: 10px;
   h2 {
+    font-family: none;
     width: 10%;
     margin: 0 0 0 15px;
     padding-bottom: 5px;
     border-bottom: rgb(93, 217, 255) 2px solid;
   }
   .dessertcard1 {
+    opacity: 0;
     display: flex;
     flex-direction: row;
     height: 70px;
@@ -270,19 +341,28 @@ input:checked ~ .likeactive1{
   border-radius: 0 20px 20px 0;
   background: #99e2d0;
   color: white;
-  padding: 0 0 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
+  width: 6rem;
   height: 100%;
   .fa-check-circle{
-    padding: 0 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
   }
 }
+.dessertcard1{
+  &:hover
+  .add i{
+    transition-duration: 1.5s;
+    transform: rotate(360deg);
+    }
+}
 .dessertcard1:hover .add {
-  margin-right: -1rem;
-	transition-duration: 0.5s;
+  margin-right: -0.6rem;
+	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
 }
 .alldescription{
@@ -332,4 +412,7 @@ footer li {
     list-style: none;
     font-size: 18px;
     padding: 5px 0 5px 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+
 }
