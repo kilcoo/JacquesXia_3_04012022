@@ -137,7 +137,6 @@ section p {
   right: 25px;
 }
 
-
 /* section restaurant*/
 .restaurant {
   background-color: #f2f2f2;
@@ -240,6 +239,9 @@ input:checked ~ .fas{
 footer {
   height: 200px;
   background-color: rgb(46, 42, 42) ;
+  a{
+    color: white;
+  }
 }
 .footerlogo {
   font-size: 20px ;
@@ -249,7 +251,6 @@ footer {
   padding: 15px 0 0 0;
 }
 footer li {
-    color: white;
     list-style: none;
     font-size: 18px;
     padding: 5px 0 5px 10px;
@@ -271,7 +272,7 @@ footer li {
       margin-left: 8px;
     }
     .explorerbtn:hover{
-      transform: scale(110%);
+      transform: scale(1.1);
       background: linear-gradient(90deg, rgb(247, 126, 212) 0%, rgb(158, 105, 223) 100%);
     }
   }
@@ -283,11 +284,10 @@ footer li {
       flex-direction: row;
     }
     .fonctionsection li:hover {
-      transform: scale(105%);
-      width: 95%;
-      border-radius: 25px;
-      -webkit-box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.40); 
-      box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.40);
+      transform: scale(1.1);
+      a:hover{
+        background-color: lighten($color: #f2f2f2, $amount: 1%);
+      }
     }
   }
   .fonctionsection a {

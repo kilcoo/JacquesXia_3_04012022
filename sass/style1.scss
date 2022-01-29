@@ -389,6 +389,10 @@ input:checked ~ .likeactive1 {
 footer {
   height: 200px;
   background-color: rgb(46, 42, 42);
+  a{
+    color: white;
+    text-decoration: none;
+  }
 }
 .footerlogo {
   font-size: 20px;
