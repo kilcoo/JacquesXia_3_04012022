@@ -353,7 +353,12 @@ footer li {
   }
 
   .fonctionsection a {
-    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    width: 91%;
+  }
+  .fonctionsection a span {
+    margin-right: 20px;
   }
 
   .number {
