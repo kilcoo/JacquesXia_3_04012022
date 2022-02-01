@@ -43,7 +43,13 @@ a {
 .logo {
   width: 60%;
   margin: 20px 70px 10px 70px;
-}
+  }
+  h1 {
+    color: black;
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
 header a {
   width: 100%;   
 }
@@ -63,7 +69,7 @@ header a {
   box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.25);
   height: 270px;
 }
-h1 {
+h2 {
   margin: 0px 75px 10px 75px;
   padding-top: 25px;
   font-weight: bold;
@@ -74,11 +80,14 @@ h1 {
 section p {
   margin: 15px 30px 25px 30px;
   font-size: large;
+  font-family: 'Roboto' , sans-serif;
   span {
     margin: 0 0 0 50px;
   }
 }
 .explorerbtn {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   margin-left: 55px;
@@ -101,13 +110,16 @@ section p {
     margin-bottom: 25px;
   }
 }
+li {
+  list-style: none;
+}
 .fonctionsection a {
   color: black;
   box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.25);
   height: 75px;
   margin: 30px 0;
   width: 95%;
-  border-radius: 25px;
+  border-radius: 80px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
@@ -127,9 +139,9 @@ section p {
   align-items: center;
   justify-content: center;
   margin: 0 0 0 10px;
-  width: 10%;
-  height: 40%;
-  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   background-color: rgba(147,86,220,1);
   font-size: large;
   color: white;
@@ -297,6 +309,10 @@ footer li {
   .fonctionsection a {
     width: 90%;
   }
+  .number {
+    width: 40px;
+    height: 30px;
+  }
   .restaurant {
     width: 100%;
   }
@@ -316,7 +332,7 @@ footer li {
   }
 }
 /* responsive PC*/
-@media screen and ( min-width: 1091px) and (max-width: 1980px) {
+@media screen and ( min-width: 1091px) and (max-width: 1990px) {
   header{
     width: 100%;
     .logocontainer{
@@ -327,7 +343,7 @@ footer li {
     }
   }
   .reservation{
-    h1{
+    h2{
       text-align: center;
     }
     p{
@@ -349,8 +365,8 @@ footer li {
     transform: scale(1.1);
   }
   .number{
-    width: 5%;
-    border-radius: 80px;
+    width: 40px;
+    height: 40px;
   }
   .restaurantcard{
     width: 20%;
