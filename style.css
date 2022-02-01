@@ -295,11 +295,16 @@ footer li {
   padding: 5px 0 5px 10px;
 }
 
-/* responsive pc*/
-@media screen and (min-width: 768px) and (max-width: 1920px) {
+/* responsive tablette*/
+@media screen and (min-width: 667px) and (max-width: 1090px) {
+  .logocontainer {
+    text-align: center;
+  }
+
   .logo {
-    width: 25%;
-    margin: 1rem 0 0 45rem;
+    width: 28%;
+    margin: auto;
+    display: flex;
   }
 
   .reservation {
@@ -334,23 +339,84 @@ footer li {
   }
 
   .fonctionsection a {
-    width: 100%;
+    width: 90%;
   }
 
   .restaurant {
+    width: 100%;
+  }
+
+  .cardcontainer {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .restaurantcard {
     margin: 20px;
-    width: 18%;
+    width: 21.4rem;
   }
   .restaurantcard img {
-    width: 342px;
+    width: 21.4rem;
   }
 
   .restaurantcard:hover {
     transform: scale(105%);
+  }
+}
+/* responsive PC*/
+@media screen and (min-width: 1091px) and (max-width: 1980px) {
+  header {
+    width: 100%;
+  }
+  header .logocontainer {
+    text-align: center;
+  }
+  header .logo {
+    width: 40%;
+  }
+
+  .reservation h1 {
+    text-align: center;
+  }
+  .reservation p {
+    text-align: center;
+  }
+
+  .explorerbtn {
+    width: 30%;
+    margin: auto;
+  }
+
+  div.explorerbtn:hover {
+    transform: scale(1.1);
+  }
+
+  .fonctionsection {
+    width: 50%;
+    margin: auto;
+  }
+
+  .fonctionsection a:hover {
+    transform: scale(1.1);
+  }
+
+  .number {
+    width: 5%;
+    border-radius: 80px;
+  }
+
+  .restaurantcard {
+    width: 20%;
+  }
+
+  .restaurantcard:hover {
+    transform: scale(1.1);
+  }
+
+  .cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
