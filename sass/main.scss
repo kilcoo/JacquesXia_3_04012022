@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@300&display=swap');
+@import "../libs/mixins.scss";
+
+/* BODY */
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Shrikhand', sans-serif;
+}
+p {
+  font-family: 'Roboto' , sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+/*loadspinner*/
+.loadspinner{
+  @include spinner;
+}
+.loading{
+  @include circlecolor;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadinger {
+  100% {
+    opacity: 0;
+    z-index: -1;
+}
+}
+/* header  */
+.logo {
+  width: 60%;
+  margin: 20px 70px 10px 70px;
+  }
+  h1 {
+    color: black;
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
+header a {
+  width: 100%;   
+}
+.villeheader {
+  height: 60px;
+  background-color: #f2f2f2 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -3px 0px 1px rgba(0,0,0,0.25);
+  .fa-map-marker-alt {
+    padding: 0 10px 0 0;
+  }
+}
+/* section */
+.reservation{
+  box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.25);
+  height: 270px;
+}
+h2 {
+  margin: 0px 75px 10px 75px;
+  padding-top: 25px;
+  font-weight: bold;
+  span {
+    margin: 0 0 0 38px;
+  }
+}
+section p {
+  margin: 15px 30px 25px 30px;
+  font-size: large;
+  font-family: 'Roboto' , sans-serif;
+  span {
+    margin: 0 0 0 50px;
+  }
+}
+.explorerbtn {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-left: 55px;
+  width: 70%;
+  color: white;
+  background: rgb(255,121,218);
+  background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+  border-radius: 55px;
+  padding-top: 5px;
+}
+.reservation {
+  background-color: #f7f5f5 ;
+}
+/* section fonctionement*/
+.fonctionnement{
+  height: 400px;
+  margin: 35px 10px 30px 0px ;
+  h2 {
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+}
+li {
+  list-style: none;
+}
+.fonctionsection a {
+  color: black;
+  box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.25);
+  height: 75px;
+  margin: 30px 0;
+  width: 95%;
+  border-radius: 80px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  i{
+    font-size: larger;
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+  span {
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: medium;
+  }
+}
+.number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(147,86,220,1);
+  font-size: large;
+  color: white;
+  position: relative;
+  right: 25px;
+}
+
+/* section restaurant*/
+.restaurant {
+  background-color: #f2f2f2;
+  h2{
+    margin: 0 0 15px 15px;
+    padding-top: 40px;
+  }
+}
+.restaurantcard  {
+  margin: 20px;
+  height: 300px;
+  border: 1px ;
+  border-radius: 25px;
+  width: 90%;
+  background-color: white; 
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.42);
+  img{
+    width: 100%;
+    object-fit: cover;
+    height: 220px;
+    border-radius: 25px 25px 0 0;
+  }
+  .news{
+    background-color: rgb(156, 226, 156);
+    color: green;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    bottom: 270px;
+    width: 22%;
+    height: 35px;
+    padding: 6px;
+    float: right;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+  .carddescription{
+    padding: 10px 0 0 15px;
+    text-decoration: none;
+  }
+  p{
+    color: black;
+    margin: 0;
+  }
+  h3{
+    margin-bottom: 5px;
+    color: black;
+  }
+}
+.like {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 30px;
+  left: 50px;
+  font-size: 20px;
+}
+.like1{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 35px;
+  right: 40px;
+}
+/* COEUR*/
+.fa-heart{
+  font-size: 30px ;
+}
+.likeunactive{
+  font-size: 28px;
+}
+.likeactive {
+  position: relative;
+  right: 28px;
+  bottom: 1px;
+  opacity: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text!important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+}
+input {
+  size: 60px;
+  position: relative;
+  left: 22px;
+  top: 8px;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+input:checked ~ .far {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+input:checked ~ .fas{
+  transition-duration: 0.5s;
+  opacity: 1;
+  }
+
+/* footer*/
+footer {
+  height: 200px;
+  background-color: rgb(46, 42, 42) ;
+  a{
+    color: white;
+  }
+}
+.footerlogo {
+  font-size: 20px ;
+  color: white;
+  font-family: 'Shrikhand';
+  margin: 20px 0 20px 30px;
+  padding: 15px 0 0 0;
+}
+footer li {
+    list-style: none;
+    font-size: 18px;
+    padding: 5px 0 5px 10px;
+}
+/* responsive tablette*/
+@media screen and ( min-width: 667px) and (max-width: 1090px) {
+  .logocontainer{
+    text-align: center;
+  }
+  .logo {
+    width: 28%;
+    margin: auto;
+    display: flex;
+  }
+  .reservation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .explorerbtn {
+      width: 100%;
+      margin-left: 8px;
+    }
+    .explorerbtn:hover{
+      transform: scale(1.1);
+      background: linear-gradient(90deg, rgb(247, 126, 212) 0%, rgb(158, 105, 223) 100%);
+    }
+  }
+  .fonctionnement{
+    height: 180px;
+    .fonctionsection{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    .fonctionsection li:hover {
+      transform: scale(1.1);
+      a:hover{
+        background-color: lighten($color: #f2f2f2, $amount: 1%);
+      }
+    }
+  }
+  .fonctionsection a {
+    display: flex;
+    justify-content: space-between;
+    width: 91%;
+    span{
+      margin-right: 20px;
+    }
+  }
+  .number {
+    width: 40px;
+    height: 30px;
+  }
+  .restaurant {
+    width: 100%;
+  }
+  .cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .restaurantcard {
+    margin: 20px;
+    width: 21.4rem;
+    img {
+      width: 21.4rem;
+    }
+  }
+  .restaurantcard:hover {
+    transform: scale(105%);
+  }
+}
+/* responsive PC*/
+@media screen and ( min-width: 1091px) and (max-width: 1990px) {
+  header{
+    width: 100%;
+    .logocontainer{
+      text-align: center;
+    }
+    .logo{
+      width: 40%;
+    }
+  }
+  .reservation{
+    h2{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+  }
+  .explorerbtn{
+    width: 30%;
+    margin: auto;
+    }
+    div.explorerbtn:hover{
+      transform: scale(1.1);
+  }
+  .fonctionsection{
+    width: 50%;
+    margin: auto;
+  }
+  .fonctionsection a:hover{
+    transform: scale(1.1);
+  }
+  .number{
+    width: 40px;
+    height: 40px;
+  }
+  .restaurantcard{
+    width: 20%;
+  }
+  .restaurantcard:hover{
+    transform: scale(1.1);
+  }
+  .cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
