@@ -111,7 +111,9 @@ nav h2 {
   padding-right: 2.3rem;
   margin: auto;
 }
+
 nav .fa-arrow-left {
+  color: black;
   padding: 22px;
 }
 
@@ -156,7 +158,7 @@ nav .fa-arrow-left {
   transition-duration: 0.5s;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 }
 
 .input {
@@ -475,4 +477,4 @@ footer li {
   }
 }
 
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=style.css.map */

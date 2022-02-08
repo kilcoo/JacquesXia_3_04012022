@@ -105,9 +105,10 @@ nav {
     padding-right: 2.3rem;
     margin: auto;
   }
-  .fa-arrow-left {
-    padding: 22px;
-  }
+}
+nav .fa-arrow-left {
+  color: black;
+  padding: 22px;
 }
 .background {
   img {
@@ -147,13 +148,7 @@ nav {
   transition-duration: 0.5s;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text !important;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9356dc),
-    to(#ff79da)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 }
 .input {
   opacity: 0;
