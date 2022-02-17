@@ -420,6 +420,10 @@ footer li {
     margin: auto;
   }
 
+  .name {
+    color: black;
+  }
+
   .fonctionsection a:hover {
     transform: scale(1.1);
     color: #9356DC;
