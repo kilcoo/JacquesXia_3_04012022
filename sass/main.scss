@@ -129,10 +129,15 @@ li {
     margin-right: 25px;
   }
   span {
+    color: black;
     font-family: 'roboto';
     font-weight: bold;
     font-size: medium;
   }
+}
+.fonctionsection a:hover{
+  color: #9356DC;
+  background-color: rgb(243, 223, 248);
 }
 .number{
   display: flex;
@@ -301,9 +306,6 @@ footer li {
     }
     .fonctionsection li:hover {
       transform: scale(1.1);
-      a:hover{
-        background-color: lighten($color: #f2f2f2, $amount: 1%);
-      }
     }
   }
   .fonctionsection a {
@@ -313,6 +315,10 @@ footer li {
     span{
       margin-right: 20px;
     }
+  }
+  .fonctionsection a:hover{
+    color: #9356DC;
+    background-color: rgb(243, 223, 248);
   }
   .number {
     width: 40px;
@@ -365,9 +371,6 @@ footer li {
   .fonctionsection{
     width: 50%;
     margin: auto;
-  }
-  .name{
-    color: black;
   }
   .fonctionsection a:hover{
     transform: scale(1.1);

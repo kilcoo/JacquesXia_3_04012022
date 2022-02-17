@@ -159,9 +159,15 @@ li {
   margin-right: 25px;
 }
 .fonctionsection a span {
+  color: black;
   font-family: "roboto";
   font-weight: bold;
   font-size: medium;
+}
+
+.fonctionsection a:hover {
+  color: #9356DC;
+  background-color: #f3dff8;
 }
 
 .number {
@@ -348,9 +354,6 @@ footer li {
   .fonctionnement .fonctionsection li:hover {
     transform: scale(1.1);
   }
-  .fonctionnement .fonctionsection li:hover a:hover {
-    background-color: whitesmoke;
-  }
 
   .fonctionsection a {
     display: flex;
@@ -359,6 +362,11 @@ footer li {
   }
   .fonctionsection a span {
     margin-right: 20px;
+  }
+
+  .fonctionsection a:hover {
+    color: #9356DC;
+    background-color: #f3dff8;
   }
 
   .number {
@@ -418,10 +426,6 @@ footer li {
   .fonctionsection {
     width: 50%;
     margin: auto;
-  }
-
-  .name {
-    color: black;
   }
 
   .fonctionsection a:hover {
