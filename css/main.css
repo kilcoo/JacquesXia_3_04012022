@@ -422,8 +422,10 @@ footer li {
 
   .fonctionsection a:hover {
     transform: scale(1.1);
+  }
+
+  .fonctionsection span:hover {
     color: #9356DC;
-    background-color: #f3dff8;
   }
 
   .number {
